@@ -1,7 +1,9 @@
-public interface Crop extends Produce {
+public class Crop implements Produce {
     boolean hasBeenHarvested = false;
     boolean hasBeenFertilized = false;
 
-    void yield();
+    void yield() {
+
+    }
 
 }
