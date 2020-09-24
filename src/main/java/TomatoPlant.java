@@ -1,4 +1,4 @@
-public class TomatoPlant implements Crop{
+public class TomatoPlant extends Crop{
     private boolean hasBeenHarvested;
     private boolean hasBeenFertilized;
 
