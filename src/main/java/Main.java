@@ -65,7 +65,15 @@ chicken.eat("Corn");
 
 
         //Set up Vehicles
+      Tractor mcFroilanTractor = new Tractor();
+      mcFroilanTractor.operate();
+      mcFroilanTractor.makeNoise();
 
+      CropDuster froilandaCropDuster = new CropDuster();
+      froilandaCropDuster.fly();
+      froilandaCropDuster.makeNoise();
+      froilandaCropDuster.operate();
+      froilandaCropDuster.fertilize();
 
 
 
@@ -83,6 +91,7 @@ chicken.eat("Corn");
 
 
         //Set up Produce
+        
 
 
 
