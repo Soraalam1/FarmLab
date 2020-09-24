@@ -9,6 +9,9 @@ public class Tractor implements FarmVehicle {
         System.out.println("Noise");
     }
 
+    public Tractor() {
+    }
+
     public void harvestCropRow (CropRow harvestedCropRow){
         System.out.println("Harvesting crops");
         ArrayList<Crop> list = harvestedCropRow.getListOfCrops();

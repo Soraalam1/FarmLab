@@ -64,7 +64,15 @@ public class Main {
 
 
         //Set up Vehicles
+      Tractor mcFroilanTractor = new Tractor();
+      mcFroilanTractor.operate();
+      mcFroilanTractor.makeNoise();
 
+      CropDuster froilandaCropDuster = new CropDuster();
+      froilandaCropDuster.fly();
+      froilandaCropDuster.makeNoise();
+      froilandaCropDuster.operate();
+      froilandaCropDuster.fertilize();
 
 
 
@@ -82,6 +90,7 @@ public class Main {
 
 
         //Set up Produce
+        
 
 
 
