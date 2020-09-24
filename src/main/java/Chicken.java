@@ -1,16 +1,22 @@
 public class Chicken implements Animal, Produce {
     private boolean hasBeenFertilized;
 
-    public void makeNoise(){
-        System.out.println("Noise");
-    }
-    public void eat(Edible object){
-        System.out.println(object + "gone");
+    public Chicken(boolean hasBeenFertilized) {
+        this.hasBeenFertilized = hasBeenFertilized;
     }
 
-    public void Yield(){
-        if(hasBeenFertilized == false){
-            System.out.println(new EdibleEgg());
+    public void makeNoise() {
+        System.out.println("cluck cluck");
+    }
+
+    public void eat(Edible object) {
+        System.out.println(object + "om nom nom");
+    }
+
+    public EdibleEgg yield() {
+        if (!hasBeenFertilized) {
+            return new EdibleEgg(); //return a new edibleEgg constructor
+        }else {return null;
         }
     }
 }

@@ -1,8 +1,10 @@
-public class CornStalk implements Crop {
+public class CornStalk extends Crop {
     private boolean hasBeenFertilized;
     private boolean hasBeenHarvested;
 
     public void yield() {
-        System.out.println("EarCorn created");
+        EarCorn earCorn = new EarCorn();
+        System.out.println("EarCorn implemented");
     }
+
 }

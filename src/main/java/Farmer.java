@@ -1,17 +1,17 @@
-public class Farmer implements Rider, Botanist {
-    public void eat(Edible food){
-        System.out.println("Eat");
-    }
-    public void mount(){
+public class Farmer extends Botanist {
 
+    public Farmer(String name) {
+        super(name);
     }
-    public void dismount(){
-
-    }
-    public void plant(Crop crop, CropRow row){
-
-    }
+    @Override
     public void makeNoise(){
         System.out.println("howdy");
+    }
+
+    @Override
+    public String toString() {
+        return "Farmer{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }
