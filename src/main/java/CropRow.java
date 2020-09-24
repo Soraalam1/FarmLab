@@ -10,4 +10,5 @@ public class CropRow {
     public void setListOfCrops(ArrayList<Crop> listOfCrops) {
         this.listOfCrops = listOfCrops;
     }
+
 }
