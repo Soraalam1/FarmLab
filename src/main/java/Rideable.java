@@ -1,3 +1,3 @@
-public interface Rideable {
+public interface Rideable extends NoiseMaker{
 
 }

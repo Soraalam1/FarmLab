@@ -1,3 +1,3 @@
-public interface Vehicle extends NoiseMaker, Rideable {
+public interface Vehicle extends Rideable {
 
 }
