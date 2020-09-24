@@ -2,7 +2,13 @@ public class TomatoPlant extends Crop{
     private boolean hasBeenHarvested;
     private boolean hasBeenFertilized;
 
-    public void yield(){
-        System.out.println("Tomato created");
+    public Tomato yield() {
+        if (hasBeenFertilized) {
+            System.out.println("Tomato created");
+            return new Tomato();
+        } else {
+    return null;
+        }
+
     }
 }
