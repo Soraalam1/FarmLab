@@ -4,8 +4,13 @@ public class Main {
 
         //Set up People
         Farmer Froilan = new Farmer("Froilan");
+        Froilan.makeNoise();
+        Froilan.eat();
 
 
+        Pilot Froilanda = new Pilot("Froilanda");
+
+        Froilanda.makeNoise();
 
 
 

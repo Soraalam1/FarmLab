@@ -10,7 +10,7 @@ public class CropDuster implements FarmVehicle, Aircraft {
     }
 
     public void makeNoise(){
-        System.out.println("loud");
+        System.out.println("loud humming");
     }
 
     public void operate(){
