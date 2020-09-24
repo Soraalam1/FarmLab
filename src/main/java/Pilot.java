@@ -1,8 +1,19 @@
-public class Pilot implements Person {
-    public void makeNoise(){
+public class Pilot extends Person {
 
+
+    public Pilot(String name) {
+        super(name);
     }
-    public void eat(Edible food){
 
+    @Override
+    public void makeNoise(){
+        System.out.println("I fly!");
+    }
+
+    @Override
+    public String toString() {
+        return "Pilot{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }
