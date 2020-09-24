@@ -1,8 +1,11 @@
 public class Pilot extends Person {
 
+    CropDuster cropDuster = new CropDuster();
 
-    public Pilot(String name) {
+    public Pilot(String name, CropDuster cropDuster) {
         super(name);
+        this.cropDuster = cropDuster;
+
     }
 
     @Override
