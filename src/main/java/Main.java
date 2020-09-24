@@ -24,6 +24,12 @@ public class Main {
 
 
         //Set up Animals
+Horse horse = new Horse();
+Chicken chicken = new Chicken();
+horse.eat("Hay");
+horse.makeNoise();
+chicken.makeNoise();
+chicken.eat("Corn");
 
 
 

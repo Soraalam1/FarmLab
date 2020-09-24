@@ -5,6 +5,10 @@ public class Chicken implements Animal, Produce {
         this.hasBeenFertilized = hasBeenFertilized;
     }
 
+    public Chicken() {
+
+    }
+
     public void makeNoise() {
         System.out.println("cluck cluck");
     }
@@ -18,5 +22,8 @@ public class Chicken implements Animal, Produce {
             return new EdibleEgg(); //return a new edibleEgg constructor
         }else {return null;
         }
+    }
+
+    public void eat(String corn) {
     }
 }

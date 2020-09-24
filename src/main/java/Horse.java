@@ -6,4 +6,9 @@ public class Horse implements Animal, Rideable {
         System.out.println(object + "chomp chomp chomp");
     }
 
+    public void eat() {
+    }
+
+    public void eat(String hay) {
+    }
 }
