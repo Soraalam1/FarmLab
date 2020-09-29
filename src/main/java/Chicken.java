@@ -38,6 +38,6 @@ public class Chicken implements Animal, Produce {
 
     @Override
     public String toString() {
-        return "Name: " + name + " Fertilized? " + hasBeenFertilized;
+        return "Name: " + name + ", Fertilized? " + hasBeenFertilized;
     }
 }
