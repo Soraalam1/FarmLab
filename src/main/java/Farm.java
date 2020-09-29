@@ -10,6 +10,7 @@ public class Farm {
 
     }
 
+
     public ArrayList<Stable> getStables() {
         return stables;
     }
