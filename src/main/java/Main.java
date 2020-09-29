@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
        //Follow the instructions in the lab. We need a certain number of certain things.
@@ -44,14 +46,7 @@ public class Main {
 
 
         //Set up Animals
-        //CHICKENS
-
-
-        ChickenCoop coop1 = new ChickenCoop();
-        ChickenCoop coop2 = new ChickenCoop();
-        ChickenCoop coop3 = new ChickenCoop();
-        ChickenCoop coop4 = new ChickenCoop();
-
+        //CHICKENS & COOP
         Chicken chicken1 = new Chicken("Clucky",false);
         Chicken chicken2 = new Chicken("Chubby",true);
         Chicken chicken3 = new Chicken("Feathers",false);
@@ -67,6 +62,63 @@ public class Main {
         Chicken chicken13 = new Chicken("Zazu",true);
         Chicken chicken14 = new Chicken("Deanie",true);
         Chicken chicken15 = new Chicken("Big Daddy Chicken",true);
+
+        ArrayList<Chicken> group1 = new ArrayList<Chicken>();
+        group1.add(chicken1);
+        group1.add(chicken2);
+        group1.add(chicken3);
+
+        ArrayList<Chicken> group2 = new ArrayList<Chicken>();
+        group2.add(chicken4);
+        group2.add(chicken5);
+        group2.add(chicken6);
+        group2.add(chicken7);
+        group2.add(chicken8);
+
+        ArrayList<Chicken> group3 = new ArrayList<Chicken>();
+        group3.add(chicken9);
+        group3.add(chicken10);
+        group3.add(chicken11);
+        group3.add(chicken12);
+
+        ArrayList<Chicken> group4 = new ArrayList<Chicken>();
+        group4.add(chicken13);
+        group4.add(chicken14);
+        group4.add(chicken15);
+
+        ChickenCoop coop1 = new ChickenCoop("Fun Coop");
+        ChickenCoop coop2 = new ChickenCoop("Warm Coop");
+        ChickenCoop coop3 = new ChickenCoop("Pretty Coop");
+        ChickenCoop coop4 = new ChickenCoop("Big Coop");
+
+        coop1.setChickens(group1);
+        coop2.setChickens(group2);
+        coop3.setChickens(group3);
+        coop4.setChickens(group4);
+
+        System.out.println("\n" +"Welcome to our chicken coops...");
+        System.out.println(coop1);
+        System.out.println(coop2);
+        System.out.println(coop3);
+        System.out.println(coop4);
+
+        System.out.println("\n" +"Now the chickens will lay eggs...");
+        chicken1.yield();
+        chicken2.yield();
+        chicken3.yield();
+        chicken4.yield();
+        chicken5.yield();
+        chicken6.yield();
+        chicken7.yield();
+        chicken8.yield();
+        chicken9.yield();
+        chicken10.yield();
+        chicken11.yield();
+        chicken12.yield();
+        chicken13.yield();
+        chicken14.yield();
+        chicken15.yield();
+
 
 
 
@@ -85,10 +137,29 @@ public class Main {
 
 
         //Set up Buildings and Fields (Farm)
+        Farm farm = new Farm();
+        Field field = new Field();
+        Stable stable1 = new Stable();
+        Stable stable2 = new Stable();
+        Stable stable3 = new Stable();
+        CropRow croprow1 = new CropRow();
+        CropRow croprow2 = new CropRow();
+        CropRow croprow3 = new CropRow();
+        CropRow croprow4 = new CropRow();
+        CropRow croprow5 = new CropRow();
+        //DALLAS I MOVED YOUR CHICKEN COOP :)
+        field.getCropRows().add(croprow1);
+        field.getCropRows().add(croprow2);
+        field.getCropRows().add(croprow3);
+        field.getCropRows().add(croprow4);
+        field.getCropRows().add(croprow5);
 
 
 
-
+        farm.getStables().add(stable1);
+        farm.getStables().add(stable2);
+        farm.getStables().add(stable3);
+        //farm.getField().add(croprow1);
 
 
 

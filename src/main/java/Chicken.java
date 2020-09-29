@@ -28,9 +28,16 @@ public class Chicken implements Animal, Produce {
 
     public EdibleEgg yield() {
         if (!hasBeenFertilized) {
-            System.out.println(this.getClass().getSimpleName() + name + " is not fertilized, therefore, has laid an egg!");
+            System.out.println(this.getClass().getSimpleName() + " " + name + " is not fertilized, therefore, has laid an edible egg!");
             return new EdibleEgg(); //return a new edibleEgg constructor
-        }else {return null;
+        }else {
+            System.out.println(this.getClass().getSimpleName() + " " + name + " is is fertilized, therefore, did not lay an edible egg!");
+            return null;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Name: " + name + " Fertilized? " + hasBeenFertilized;
     }
 }
