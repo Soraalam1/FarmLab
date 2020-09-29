@@ -72,6 +72,14 @@ public class Main {
         ChickenCoop chickenCoop2 = new ChickenCoop();
         ChickenCoop chickenCoop3 = new ChickenCoop();
         ChickenCoop chickenCoop4 = new ChickenCoop();
+        field.getCropRows().add(croprow1);
+        field.getCropRows().add(croprow2);
+        field.getCropRows().add(croprow3);
+        field.getCropRows().add(croprow4);
+        field.getCropRows().add(croprow5);
+
+
+
         farm.getStables().add(stable1);
         farm.getStables().add(stable2);
         farm.getStables().add(stable3);
