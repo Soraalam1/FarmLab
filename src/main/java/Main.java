@@ -93,6 +93,13 @@ public class Main {
         horseStable1.add(horse1);
         horseStable1.add(horse2);
         horseStable1.add(horse3);
+        horseStable2.add(horse4);
+        horseStable2.add(horse5);
+        horseStable2.add(horse6);
+        horseStable3.add(horse7);
+        horseStable3.add(horse8);
+        horseStable3.add(horse9);
+        horseStable3.add(horse10);
 
         //CHICKENS & COOP
         Chicken chicken1 = new Chicken("Clucky",false);
@@ -181,66 +188,7 @@ public class Main {
 
 
 
-
-        horseStable2.add(horse4);
-        horseStable2.add(horse5);
-        horseStable2.add(horse6);
-
-        horseStable3.add(horse7);
-        horseStable3.add(horse8);
-        horseStable3.add(horse9);
-        horseStable3.add(horse10);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //Set up Buildings and Fields (Farm)
-        Farm farm = new Farm();
-        Field field = new Field();
-        Stable stable1 = new Stable();
-        Stable stable2 = new Stable();
-        Stable stable3 = new Stable();
-        CropRow croprow1 = new CropRow();
-        CropRow croprow2 = new CropRow();
-        CropRow croprow3 = new CropRow();
-        CropRow croprow4 = new CropRow();
-        CropRow croprow5 = new CropRow();
-        ChickenCoop chickenCoop1 = new ChickenCoop();
-        ChickenCoop chickenCoop2 = new ChickenCoop();
-        ChickenCoop chickenCoop3 = new ChickenCoop();
-        ChickenCoop chickenCoop4 = new ChickenCoop();
-        farm.getStables().add(stable1);
-        farm.getStables().add(stable2);
-        farm.getStables().add(stable3);
-        farm.getField().add(croprow1);
-        stable1.setHorses(horseStable1);
-        stable2.setHorses(horseStable2);
-        stable3.setHorses(horseStable3);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
 
         //Set up Vehicles
