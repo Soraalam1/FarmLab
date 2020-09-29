@@ -10,7 +10,7 @@ public class Pilot extends Person {
 
     @Override
     public void makeNoise(){
-        System.out.println("I fly!");
+        System.out.println("My name is " + name + ", I'm a Pilot & I fly!");
     }
 
     @Override

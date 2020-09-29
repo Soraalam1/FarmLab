@@ -2,11 +2,17 @@ import java.util.ArrayList;
 
 public class CropDuster implements FarmVehicle, Aircraft {
 
+    String name;
+
     public CropDuster() {
     }
 
+    public CropDuster(String name) {
+        this.name = name;
+    }
+
     public void fly() {
-        System.out.println("Flying");
+        System.out.println(name + " is flying");
     }
 
     public void makeNoise(){
@@ -14,9 +20,14 @@ public class CropDuster implements FarmVehicle, Aircraft {
     }
 
     public void operate(){
-        System.out.println("Spraying Crops");
+        System.out.println(name + " is spraying Crops");
     }
 
+
+    @Override
+    public String toString() {
+        return "CropDuster";
+    }
 
     public void fertilize(CropRow cropRow){
         System.out.println("Fertilizing Crop Row");
@@ -25,5 +36,6 @@ public class CropDuster implements FarmVehicle, Aircraft {
             list.get(index).fertilize();
 
         }
+
     }
 }

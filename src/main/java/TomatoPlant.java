@@ -2,7 +2,6 @@ public class TomatoPlant extends Crop{
     private boolean hasBeenHarvested;
     private boolean hasBeenFertilized;
 
-
     public TomatoPlant(boolean hasBeenHarvested, boolean hasBeenFertilized) {
         this.hasBeenHarvested = hasBeenHarvested;
         this.hasBeenFertilized = hasBeenFertilized;
