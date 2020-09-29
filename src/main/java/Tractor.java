@@ -1,15 +1,27 @@
 import java.util.ArrayList;
 
 public class Tractor implements FarmVehicle {
+
+    String name;
+
+    public Tractor(String name) {
+        this.name = name;
+    }
+
     public void operate(){
-        System.out.println("Tractor is doing work on the farm.");
+        System.out.println(name + " is doing work on the farm");
     }
 
     public void makeNoise() {
-        System.out.println("Noise");
+        System.out.println("tractor noises");
     }
 
     public Tractor() {
+    }
+
+    @Override
+    public String toString() {
+        return "Tractor";
     }
 
     public void harvestCropRow (CropRow harvestedCropRow){
@@ -21,6 +33,7 @@ public class Tractor implements FarmVehicle {
                 list.get(index).yield();
                 list.get(index).harvest();
             }
+
         }
     }
 }

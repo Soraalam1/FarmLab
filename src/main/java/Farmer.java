@@ -5,7 +5,7 @@ public class Farmer extends Botanist {
     }
     @Override
     public void makeNoise(){
-        System.out.println("howdy");
+        System.out.println("Howdy, My name is " + name +" & I'm a Farmer!");
     }
 
     @Override

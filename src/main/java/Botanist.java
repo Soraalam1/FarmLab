@@ -7,8 +7,10 @@ public class Botanist extends Person{
     public void makeNoise(){
         System.out.println("I plant things");
     }
-    public void eat(Edible food){
 
+    @Override
+    public void eat(Edible object){
+        System.out.println(this.getName() + " is eating " + object);
     }
 
     public void plant(Crop crop, CropRow croprow){

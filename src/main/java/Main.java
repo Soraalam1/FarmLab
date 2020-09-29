@@ -3,14 +3,27 @@ public class Main {
        //Follow the instructions in the lab. We need a certain number of certain things.
 
         //Set up People
+        // OLE MC' FROILAN
         Farmer Froilan = new Farmer("Froilan");
+        Tractor mcFroilanTractor = new Tractor("Big Green Tractor");
+        Tomato tomato = new Tomato("red tomato");
+
         Froilan.makeNoise();
-        Froilan.eat();
+        Froilan.eat(tomato);
+        Froilan.mount(mcFroilanTractor);
+        Froilan.dismount(mcFroilanTractor);
 
-
-        Pilot Froilanda = new Pilot("Froilanda");
+        //SISTER FROILANDA
+        CropDuster froilandaCropDuster = new CropDuster("Pink Crop Duster");
+        Pilot Froilanda = new Pilot("Froilanda",froilandaCropDuster);
+        EarCorn corn = new EarCorn("buttery corn");
 
         Froilanda.makeNoise();
+        Froilanda.eat(corn);
+        Froilanda.mount(froilandaCropDuster);
+        Froilanda.dismount(froilandaCropDuster);
+
+
 
 
 
@@ -64,15 +77,16 @@ public class Main {
 
 
         //Set up Vehicles
-      Tractor mcFroilanTractor = new Tractor();
+      //ASHER I ALSO MOVED YOUR TRACTOR TO THE PERSON SECTION :)
       mcFroilanTractor.operate();
       mcFroilanTractor.makeNoise();
 
-      CropDuster froilandaCropDuster = new CropDuster();
+      //ASHER I MOVED YOUR CROP DUSTER TO THE PERSON SECTION :)
       froilandaCropDuster.fly();
+        froilandaCropDuster.operate();
       froilandaCropDuster.makeNoise();
-      froilandaCropDuster.operate();
-      froilandaCropDuster.fertilize();
+
+      //froilandaCropDuster.fertilize();
 
 
 
