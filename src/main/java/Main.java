@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.logging.Handler;
 
 public class Main {
@@ -44,6 +45,9 @@ public class Main {
 
 
         //Set up Animals
+        ArrayList<Horse> horseStable1 = new ArrayList<Horse>();
+        ArrayList<Horse> horseStable2 = new ArrayList<Horse>();
+        ArrayList<Horse> horseStable3 = new ArrayList<Horse>();
 
         Horse horse1 = new Horse("Jumpin' Jack");
         Horse horse2 = new Horse("Choco");
@@ -55,6 +59,20 @@ public class Main {
         Horse horse8 = new Horse("Bella");
         Horse horse9 = new Horse("Black Knight");
         Horse horse10 = new Horse("Maximus");
+
+        horseStable1.add(horse1);
+        horseStable1.add(horse2);
+        horseStable1.add(horse3);
+
+        horseStable2.add(horse4);
+        horseStable2.add(horse5);
+        horseStable2.add(horse6);
+
+        horseStable3.add(horse7);
+        horseStable3.add(horse8);
+        horseStable3.add(horse9);
+        horseStable3.add(horse10);
+
 
 
 
@@ -87,6 +105,10 @@ public class Main {
         farm.getStables().add(stable2);
         farm.getStables().add(stable3);
         farm.getField().add(croprow1);
+        stable1.setHorses(horseStable1);
+        stable2.setHorses(horseStable2);
+        stable3.setHorses(horseStable3);
+
 
 
 
