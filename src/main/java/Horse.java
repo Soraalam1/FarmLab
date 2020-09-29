@@ -21,4 +21,8 @@ public class Horse implements Animal, Rideable {
         System.out.println(object + "chomp chomp chomp");
     }
 
+    @Override
+    public String toString() {
+        return name;
+    }
 }

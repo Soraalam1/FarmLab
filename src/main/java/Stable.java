@@ -1,14 +1,15 @@
 import java.util.ArrayList;
 
 public class Stable {
-    ArrayList<Horse> horses = new ArrayList<Horse>();
+    private String name;
+    private ArrayList<Horse> horses = new ArrayList<Horse>();
 
     public Stable(ArrayList<Horse> horses) {
         this.horses = horses;
     }
 
-    public Stable() {
-
+    public Stable(String name) {
+        this.name = name;
     }
 
     public ArrayList<Horse> getHorses() {
@@ -21,8 +22,7 @@ public class Stable {
 
     @Override
     public String toString() {
-        return "Stable{" +
-                "horses=" + horses +
-                '}';
+        return name + "Stable: " + horses
+                ;
     }
 }

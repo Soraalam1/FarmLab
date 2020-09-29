@@ -34,9 +34,9 @@ public class Main {
         Farm farm = new Farm();
         Field field = new Field();
         FarmHouse farmHouse = new FarmHouse();
-        Stable stable1 = new Stable();
-        Stable stable2 = new Stable();
-        Stable stable3 = new Stable();
+        Stable stable1 = new Stable("Thee Stallion's ");
+        Stable stable2 = new Stable("Speed Demon's ");
+        Stable stable3 = new Stable("Polo Assassin's ");
         CropRow croprow1 = new CropRow();
         CropRow croprow2 = new CropRow();
         CropRow croprow3 = new CropRow();
@@ -64,29 +64,21 @@ public class Main {
 
 
 
-
-
-
-
-
-
-
-
-
         //Set up Animals
 
         ArrayList<Horse> horseStable1 = new ArrayList<Horse>();
         ArrayList<Horse> horseStable2 = new ArrayList<Horse>();
         ArrayList<Horse> horseStable3 = new ArrayList<Horse>();
 
-        Horse horse1 = new Horse("Jumpin' Jack");
+
+        Horse horse1 = new Horse("Bella");
         Horse horse2 = new Horse("Choco");
-        Horse horse3= new Horse("Thunder");
+        Horse horse3= new Horse("LaFronda");
         Horse horse4= new Horse("Diesel");
         Horse horse5 = new Horse("Mustang");
         Horse horse6 = new Horse("Blazer");
         Horse horse7 = new Horse("White Pegasus");
-        Horse horse8 = new Horse("Bella");
+        Horse horse8 = new Horse("Jumpin Jack");
         Horse horse9 = new Horse("Black Knight");
         Horse horse10 = new Horse("Maximus");
 
@@ -100,6 +92,16 @@ public class Main {
         horseStable3.add(horse8);
         horseStable3.add(horse9);
         horseStable3.add(horse10);
+
+        stable1.setHorses(horseStable1);
+        stable2.setHorses(horseStable2);
+        stable3.setHorses(horseStable3);
+
+        System.out.println('\n' + "Welcome to our Horse Stables...");
+        System.out.println(stable1);
+        System.out.println(stable2);
+        System.out.println(stable3);
+
 
         //CHICKENS & COOP
         Chicken chicken1 = new Chicken("Clucky",false);
@@ -188,7 +190,7 @@ public class Main {
 
 
 
-        
+
 
 
         //Set up Vehicles
