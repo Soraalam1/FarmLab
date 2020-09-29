@@ -69,10 +69,24 @@ public class Main {
 
 
         //Set up Buildings and Fields (Farm)
-
-
-
-
+        Farm farm = new Farm();
+        Field field = new Field();
+        Stable stable1 = new Stable();
+        Stable stable2 = new Stable();
+        Stable stable3 = new Stable();
+        CropRow croprow1 = new CropRow();
+        CropRow croprow2 = new CropRow();
+        CropRow croprow3 = new CropRow();
+        CropRow croprow4 = new CropRow();
+        CropRow croprow5 = new CropRow();
+        ChickenCoop chickenCoop1 = new ChickenCoop();
+        ChickenCoop chickenCoop2 = new ChickenCoop();
+        ChickenCoop chickenCoop3 = new ChickenCoop();
+        ChickenCoop chickenCoop4 = new ChickenCoop();
+        farm.getStables().add(stable1);
+        farm.getStables().add(stable2);
+        farm.getStables().add(stable3);
+        farm.getField().add(croprow1);
 
 
 
