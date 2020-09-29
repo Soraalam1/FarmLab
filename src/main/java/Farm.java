@@ -6,9 +6,49 @@ public class Farm {
     FarmHouse ourFarmHouse = new FarmHouse();
     Field field;
 
-    public Farm(ArrayList<Stable> stables, ArrayList<ChickenCoop> coops, FarmHouse ourFarmHouse) {
+    public Farm() {
+
+    }
+
+    public ArrayList<Stable> getStables() {
+        return stables;
+    }
+
+    public void setStables(ArrayList<Stable> stables) {
         this.stables = stables;
+    }
+
+    public ArrayList<ChickenCoop> getCoops() {
+        return coops;
+    }
+
+    public void setCoops(ArrayList<ChickenCoop> coops) {
         this.coops = coops;
+    }
+
+    public FarmHouse getOurFarmHouse() {
+        return ourFarmHouse;
+    }
+
+    public void setOurFarmHouse(FarmHouse ourFarmHouse) {
         this.ourFarmHouse = ourFarmHouse;
+    }
+
+    public Field getField() {
+        return field;
+    }
+
+    public void setField(Field field) {
+        this.field = field;
+    }
+
+    @Override
+    public String toString() {
+        return "Farm{" +
+                "stables=" + stables +
+                ", coops=" + coops +
+                ", ourFarmHouse=" + ourFarmHouse +
+                ", field=" + field +
+                '}';
     }
 }
