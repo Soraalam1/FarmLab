@@ -1,3 +1,5 @@
+import java.util.logging.Handler;
+
 public class Main {
     public static void main(String[] args) {
        //Follow the instructions in the lab. We need a certain number of certain things.
@@ -43,7 +45,16 @@ public class Main {
 
         //Set up Animals
 
-
+        Horse horse1 = new Horse("Jumpin' Jack");
+        Horse horse2 = new Horse("Choco");
+        Horse horse3= new Horse("Thunder");
+        Horse horse4= new Horse("Diesel");
+        Horse horse5 = new Horse("Mustang");
+        Horse horse6 = new Horse("Blazer");
+        Horse horse7 = new Horse("White Pegasus");
+        Horse horse8 = new Horse("Bella");
+        Horse horse9 = new Horse("Black Knight");
+        Horse horse10 = new Horse("Maximus");
 
 
 
