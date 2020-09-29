@@ -31,7 +31,7 @@ public class Chicken implements Animal, Produce {
             System.out.println(this.getClass().getSimpleName() + " " + name + " is not fertilized, therefore, has laid an edible egg!");
             return new EdibleEgg(); //return a new edibleEgg constructor
         }else {
-            System.out.println(this.getClass().getSimpleName() + " " + name + " is is fertilized, therefore, did not lay an edible egg!");
+            System.out.println(this.getClass().getSimpleName() + " " + name + " is fertilized, therefore, did not lay an edible egg!");
             return null;
         }
     }

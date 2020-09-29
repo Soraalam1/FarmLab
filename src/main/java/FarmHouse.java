@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class FarmHouse {
     ArrayList<Person> people = new ArrayList<Person>();
+    ArrayList<Edible> foodSupply = new ArrayList<Edible>();
 
     public FarmHouse(ArrayList<Person> people) {
         this.people = people;
@@ -17,6 +18,12 @@ public class FarmHouse {
 
     public void setPeople(ArrayList<Person> people) {
         this.people = people;
+    }
+
+    public void addFood(Edible edible){
+
+        foodSupply.add(edible);
+
     }
 
     @Override
