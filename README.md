@@ -17,3 +17,5 @@ GIT FLOW
 8. If there's something wrong with it, fix the conflicts. Repeat step 4 and on after.
 
 9. Go work on your next ticket...
+
+![](FarmFinalUML.png)
