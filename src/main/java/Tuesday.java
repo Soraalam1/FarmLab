@@ -304,7 +304,6 @@ public class Tuesday {
         EarCorn froisCorn = new EarCorn("sweet corn");
         Tomato froilandsTomato1 = new Tomato("red tomato");
         Tomato froilandsTomato2 = new Tomato("green tomato");
-        Tomato froilandsTomato3 = new Tomato("sweet tomato");
         EdibleEgg froisEgg1 = new EdibleEgg();
         EdibleEgg froisEgg2 = new EdibleEgg();
         EdibleEgg froisEgg3 = new EdibleEgg();
