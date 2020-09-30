@@ -1,3 +1,3 @@
-public interface IAnimal extends INoiseMaker, IEater {
+public interface IAnimal extends IEater {
 
 }
