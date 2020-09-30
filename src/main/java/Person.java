@@ -1,4 +1,4 @@
-public class Person implements Rider{
+public class Person implements IRider{
 
     String name;
 
@@ -16,15 +16,18 @@ public class Person implements Rider{
     public void makeNoise(){
         System.out.println(this.getName() + " is talking ");
     }
-    public void eat(Edible object){
+    public void eat(IEdible object){
         System.out.println(this.getName() + " is eating " + object);
     }
-    public void mount(Rideable object){
+    public void mount(IRideable object){
         System.out.println(this.getName() + " has mounted " + object);
+    }
+    public void ride(IRideable thing){
+        System.out.println(name + " is riding " + thing + ".");
     }
 
 
-    public void dismount(Rideable object){
+    public void dismount(IRideable object){
         System.out.println(this.getName() + " has dismounted " + object);
     }
 

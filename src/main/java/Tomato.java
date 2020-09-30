@@ -1,9 +1,9 @@
-public class Tomato implements Edible{
+public class Tomato implements IEdible{
 
     String name;
 
     public Tomato(){
-
+        this.name = "New Tomato";
     }
     public Tomato(String name) {
         this.name = name;

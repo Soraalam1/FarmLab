@@ -32,10 +32,15 @@ public class CornStalk extends Crop {
                 '}';
     }
 
+    public String getProduceName(){
+        return "EarCorn";
+    }
+
     @Override
     public EarCorn yield() {
         if (hasBeenFertilized) {
-            System.out.println("EarCorn implemented");
+            System.out.println("EarCorn harvested!");
+            setHasBeenHarvested(true);
             return new EarCorn();
         } else {
     return null;

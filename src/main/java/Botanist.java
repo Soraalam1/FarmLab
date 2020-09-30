@@ -9,7 +9,7 @@ public class Botanist extends Person{
     }
 
     @Override
-    public void eat(Edible object){
+    public void eat(IEdible object){
         System.out.println(this.getName() + " is eating " + object);
     }
 

@@ -1,8 +1,8 @@
-public class EarCorn implements Edible {
+public class EarCorn implements IEdible {
     String name;
 
     public EarCorn() {
-
+        this.name = "New Earcorn";
     }
 
     public EarCorn(String name) {
@@ -14,4 +14,5 @@ public class EarCorn implements Edible {
     public String toString() {
         return name;
     }
+
 }

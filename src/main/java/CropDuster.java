@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class CropDuster implements FarmVehicle, Aircraft {
+public class CropDuster implements IFarmVehicle, IAircraft {
 
     String name;
 
@@ -30,12 +30,11 @@ public class CropDuster implements FarmVehicle, Aircraft {
     }
 
     public void fertilize(CropRow cropRow){
-        System.out.println("Fertilizing Crop Row");
+        System.out.println("Fertilizing " + cropRow.getName());
         ArrayList<Crop> list = cropRow.getListOfCrops();
         for (int index = 0; index < list.size(); index++ ){
             list.get(index).fertilize();
-
         }
-
+        System.out.println("Fertilizing of " + cropRow.getName() + " complete!");
     }
 }

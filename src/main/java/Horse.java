@@ -1,4 +1,4 @@
-public class Horse implements Animal, Rideable {
+public class Horse implements IAnimal, IRideable {
     private String name;
 
 
@@ -17,8 +17,8 @@ public class Horse implements Animal, Rideable {
     public void makeNoise(){
         System.out.println("YUUUUHHHHEEERRRR");
     }
-    public void eat(Edible object){
-        System.out.println(object + "chomp chomp chomp");
+    public void eat(IEdible object){
+        System.out.println(name + " is eating " + object + " *chomp chomp*");
     }
 
     @Override
