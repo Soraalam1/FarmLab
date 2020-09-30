@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public class Farm {
-    ArrayList<Stable> stables = new ArrayList<Stable>();
-    ArrayList<ChickenCoop> coops = new ArrayList<ChickenCoop>();
-    FarmHouse ourFarmHouse = new FarmHouse();
-    Field field;
+    private ArrayList<Stable> stables = new ArrayList<Stable>();
+    private ArrayList<ChickenCoop> coops = new ArrayList<ChickenCoop>();
+    private FarmHouse ourFarmHouse = new FarmHouse();
+    private Field field;
 
     public Farm() {
 
