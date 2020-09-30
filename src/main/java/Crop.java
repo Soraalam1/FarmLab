@@ -22,11 +22,7 @@ public class Crop implements IProduce {
         this.hasBeenFertilized = true;
     }
 
-    public void harvest(){
-        this.hasBeenHarvested = true;
-    }
 
-    public String getProduceName() {
-        return "Generic Crop";
-    }
+
+
 }

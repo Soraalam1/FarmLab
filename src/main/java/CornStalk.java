@@ -32,9 +32,7 @@ public class CornStalk extends Crop {
                 '}';
     }
 
-    public String getProduceName(){
-        return "EarCorn";
-    }
+
 
     @Override
     public EarCorn yield() {

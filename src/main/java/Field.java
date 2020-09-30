@@ -22,7 +22,6 @@ public class Field {
                 '}';
     }
 
-    public void add(CropRow croprow1) {
-    }
+
 }
 
