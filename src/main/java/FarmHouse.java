@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class FarmHouse {
-    ArrayList<Person> people = new ArrayList<Person>();
-    ArrayList<IEdible> foodSupply = new ArrayList<IEdible>();
+    private ArrayList<Person> people = new ArrayList<Person>();
+     ArrayList<IEdible> foodSupply = new ArrayList<IEdible>();
 
     public FarmHouse(ArrayList<Person> people) {
         this.people = people;
