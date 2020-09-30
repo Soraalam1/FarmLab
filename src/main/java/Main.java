@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-       //Follow the instructions in the lab. We need a certain number of certain things.
+        //Follow the instructions in the lab. We need a certain number of certain things.
         System.out.println("Ol' McFroilan Had a Farm...");
         System.out.println();
 
@@ -12,20 +12,18 @@ public class Main {
         // OLE MC' FROILAN
         Farmer Froilan = new Farmer("Froilan");
         Tractor mcFroilanTractor = new Tractor("Big Green Tractor");
-        Tomato tomato = new Tomato("red tomato");
+
 
         Froilan.makeNoise();
-        Froilan.eat(tomato);
         Froilan.mount(mcFroilanTractor);
         Froilan.dismount(mcFroilanTractor);
 
         //SISTER FROILANDA
         CropDuster froilandaCropDuster = new CropDuster("Pink Crop Duster");
-        Pilot Froilanda = new Pilot("Froilanda",froilandaCropDuster);
-        EarCorn corn = new EarCorn("buttery corn");
+        Pilot Froilanda = new Pilot("Froilanda", froilandaCropDuster);
+
 
         Froilanda.makeNoise();
-        Froilanda.eat(corn);
         Froilanda.mount(froilandaCropDuster);
         Froilanda.dismount(froilandaCropDuster);
 
@@ -66,8 +64,8 @@ public class Main {
 
         Horse horse1 = new Horse("Bella");
         Horse horse2 = new Horse("Choco");
-        Horse horse3= new Horse("LaFronda");
-        Horse horse4= new Horse("Diesel");
+        Horse horse3 = new Horse("LaFronda");
+        Horse horse4 = new Horse("Diesel");
         Horse horse5 = new Horse("Mustang");
         Horse horse6 = new Horse("Blazer");
         Horse horse7 = new Horse("White Pegasus");
@@ -97,21 +95,21 @@ public class Main {
 
 
         //CHICKENS & COOP
-        Chicken chicken1 = new Chicken("Clucky",false);
-        Chicken chicken2 = new Chicken("Chubby",true);
-        Chicken chicken3 = new Chicken("Feathers",false);
-        Chicken chicken4 = new Chicken("Big Momma Chicken",false);
-        Chicken chicken5 = new Chicken("Cheddar",true);
-        Chicken chicken6 = new Chicken("Brownie",false);
-        Chicken chicken7 = new Chicken("Boo Boo",true);
-        Chicken chicken8 = new Chicken("Sunshine",false);
-        Chicken chicken9 = new Chicken("Chicky",true);
-        Chicken chicken10 = new Chicken("Little One",true);
-        Chicken chicken11 = new Chicken("Cedar",true);
-        Chicken chicken12 = new Chicken("Birdy",false);
-        Chicken chicken13 = new Chicken("Zazu",true);
-        Chicken chicken14 = new Chicken("Deanie",true);
-        Chicken chicken15 = new Chicken("Big Daddy Chicken",true);
+        Chicken chicken1 = new Chicken("Clucky", false);
+        Chicken chicken2 = new Chicken("Chubby", true);
+        Chicken chicken3 = new Chicken("Feathers", false);
+        Chicken chicken4 = new Chicken("Big Momma Chicken", false);
+        Chicken chicken5 = new Chicken("Cheddar", true);
+        Chicken chicken6 = new Chicken("Brownie", false);
+        Chicken chicken7 = new Chicken("Boo Boo", true);
+        Chicken chicken8 = new Chicken("Sunshine", false);
+        Chicken chicken9 = new Chicken("Chicky", true);
+        Chicken chicken10 = new Chicken("Little One", true);
+        Chicken chicken11 = new Chicken("Cedar", true);
+        Chicken chicken12 = new Chicken("Birdy", false);
+        Chicken chicken13 = new Chicken("Zazu", true);
+        Chicken chicken14 = new Chicken("Deanie", true);
+        Chicken chicken15 = new Chicken("Big Daddy Chicken", true);
 
         ArrayList<Chicken> group1 = new ArrayList<Chicken>();
         group1.add(chicken1);
@@ -155,13 +153,13 @@ public class Main {
         coop3.setChickens(group3);
         coop4.setChickens(group4);
 
-        System.out.println("\n" +"Welcome to our chicken coops...");
+        System.out.println("\n" + "Welcome to our chicken coops...");
         System.out.println(coop1);
         System.out.println(coop2);
         System.out.println(coop3);
         System.out.println(coop4);
 
-        System.out.println("\n" +"Now the chickens will lay eggs...");
+        System.out.println("\n" + "Now the chickens will lay eggs...");
         farmHouse.addFood(chicken1.yield());
         chicken2.yield();
         farmHouse.addFood(chicken3.yield());
@@ -179,42 +177,35 @@ public class Main {
         chicken15.yield();
 
 
-
-
-
-
-
-
-
         //Set up Vehicles
-      //ASHER I ALSO MOVED YOUR TRACTOR TO THE PERSON SECTION :)
+        //ASHER I ALSO MOVED YOUR TRACTOR TO THE PERSON SECTION :)
 
-      //ASHER I MOVED YOUR CROP DUSTER TO THE PERSON SECTION :)
+        //ASHER I MOVED YOUR CROP DUSTER TO THE PERSON SECTION :)
         System.out.println("\n" + "Testing Basic Vehicle Operation...");
         mcFroilanTractor.operate();
         mcFroilanTractor.makeNoise();
 
-      froilandaCropDuster.fly();
+        froilandaCropDuster.fly();
         froilandaCropDuster.makeNoise();
         froilandaCropDuster.operate();
 
         //Set up Produce
-        System.out.println("\n"+ "Here are my crops!");
-        CornStalk cornStalk1 = new CornStalk(true,false);
-        CornStalk cornStalk2 = new CornStalk(true,false);
-        CornStalk cornStalk3 = new CornStalk(true,false);
-        CornStalk cornStalk4 = new CornStalk(true,false);
-        CornStalk cornStalk5 = new CornStalk(true,false);
-        CornStalk cornStalk6 = new CornStalk(false,false);
-        CornStalk cornStalk7 = new CornStalk(false,false);
-        CornStalk cornStalk8 = new CornStalk(false,false);
+        System.out.println("\n" + "Here are my crops!");
+        CornStalk cornStalk1 = new CornStalk(true, false);
+        CornStalk cornStalk2 = new CornStalk(true, false);
+        CornStalk cornStalk3 = new CornStalk(true, false);
+        CornStalk cornStalk4 = new CornStalk(true, false);
+        CornStalk cornStalk5 = new CornStalk(true, false);
+        CornStalk cornStalk6 = new CornStalk(false, false);
+        CornStalk cornStalk7 = new CornStalk(false, false);
+        CornStalk cornStalk8 = new CornStalk(false, false);
         CornStalk cornStalk9 = new CornStalk(false, false);
-        CornStalk cornStalk10 = new CornStalk(false,false);
-        CornStalk cornStalk11 = new CornStalk(false,false);
-        CornStalk cornStalk12 = new CornStalk(false,false);
-        CornStalk cornStalk13 = new CornStalk(false,false);
-        CornStalk cornStalk14 = new CornStalk(false,false);
-        CornStalk cornStalk15 = new CornStalk(false,false);
+        CornStalk cornStalk10 = new CornStalk(false, false);
+        CornStalk cornStalk11 = new CornStalk(false, false);
+        CornStalk cornStalk12 = new CornStalk(false, false);
+        CornStalk cornStalk13 = new CornStalk(false, false);
+        CornStalk cornStalk14 = new CornStalk(false, false);
+        CornStalk cornStalk15 = new CornStalk(false, false);
         croprow1.getListOfCrops().add(cornStalk1);
         croprow1.getListOfCrops().add(cornStalk2);
         croprow1.getListOfCrops().add(cornStalk3);
@@ -233,18 +224,18 @@ public class Main {
         croprow1.setName("Corn Row");
         System.out.println(croprow1);
 
-        TomatoPlant tomato1 = new TomatoPlant(false,false);
-        TomatoPlant tomato2 = new TomatoPlant(false,false);
-        TomatoPlant tomato3 = new TomatoPlant(false,false);
-        TomatoPlant tomato4 = new TomatoPlant(false,false);
-        TomatoPlant tomato5 = new TomatoPlant(false,false);
-        TomatoPlant tomato6 = new TomatoPlant(false,false);
-        TomatoPlant tomato7 = new TomatoPlant(false,false);
-        TomatoPlant tomato8 = new TomatoPlant(false,false);
-        TomatoPlant tomato9 = new TomatoPlant(false,false);
-        TomatoPlant tomato10 = new TomatoPlant(false,false);
-        TomatoPlant tomato11 = new TomatoPlant(false,false);
-        TomatoPlant tomato12 = new TomatoPlant(false,false);
+        TomatoPlant tomato1 = new TomatoPlant(false, false);
+        TomatoPlant tomato2 = new TomatoPlant(false, false);
+        TomatoPlant tomato3 = new TomatoPlant(false, false);
+        TomatoPlant tomato4 = new TomatoPlant(false, false);
+        TomatoPlant tomato5 = new TomatoPlant(false, false);
+        TomatoPlant tomato6 = new TomatoPlant(false, false);
+        TomatoPlant tomato7 = new TomatoPlant(false, false);
+        TomatoPlant tomato8 = new TomatoPlant(false, false);
+        TomatoPlant tomato9 = new TomatoPlant(false, false);
+        TomatoPlant tomato10 = new TomatoPlant(false, false);
+        TomatoPlant tomato11 = new TomatoPlant(false, false);
+        TomatoPlant tomato12 = new TomatoPlant(false, false);
         croprow2.getListOfCrops().add(tomato1);
         croprow2.getListOfCrops().add(tomato2);
         croprow2.getListOfCrops().add(tomato3);
@@ -289,24 +280,63 @@ public class Main {
         croprow5.setName("Beans");
         System.out.println(croprow5);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        System.out.println("\n" + "**************It's Sunday!**************" + "\n");
         
+
+        System.out.println("It's breakfast time...");
+
+        EarCorn froisCorn = new EarCorn("sweet corn");
+        Tomato froilandsTomato1 = new Tomato("red tomato");
+        Tomato froilandsTomato2 = new Tomato("green tomato");
+        Tomato froilandsTomato3 = new Tomato("sweet tomato");
+        EdibleEgg froisEgg1 = new EdibleEgg();
+        EdibleEgg froisEgg2 = new EdibleEgg();
+        EdibleEgg froisEgg3 = new EdibleEgg();
+        EdibleEgg froisEgg4 = new EdibleEgg();
+        EdibleEgg froisEgg5 = new EdibleEgg();
+
+        ArrayList<Edible> froilandsBreakfast = new ArrayList<Edible>();
+        froilandsBreakfast.add(froisCorn);
+        froilandsBreakfast.add(froilandsTomato1);
+        froilandsBreakfast.add(froilandsTomato2);
+        froilandsBreakfast.add(froilandsTomato3);
+        froilandsBreakfast.add(froisEgg1);
+        froilandsBreakfast.add(froisEgg2);
+        froilandsBreakfast.add(froisEgg3);
+        froilandsBreakfast.add(froisEgg4);
+        froilandsBreakfast.add(froisEgg5);
+
+        for (Edible currentFood : froilandsBreakfast) {
+            Froilan.eat(currentFood);
+        }
+        System.out.println();
+        EarCorn corn = new EarCorn("buttery corn");
+        EarCorn corn2 = new EarCorn("dry corn");
+        Tomato froilandasTomato = new Tomato("cherry tomato");
+        EdibleEgg froilandasEgg1 = new EdibleEgg();
+        EdibleEgg froilandasEgg2 = new EdibleEgg();
+
+        ArrayList<Edible> froilandasBreakfast = new ArrayList<Edible>();
+        froilandasBreakfast.add(corn);
+        froilandasBreakfast.add(corn2);
+        froilandasBreakfast.add(froilandasTomato);
+        froilandasBreakfast.add(froilandasEgg1);
+        froilandasBreakfast.add(froilandasEgg2);
+
+        for (Edible currentFood1 : froilandasBreakfast) {
+            Froilanda.eat(currentFood1);
+        }
+        System.out.println();
+        System.out.println("Every Sunday Froilan plants crops...");
+        TomatoPlant tomatoPlant = new TomatoPlant(false,false);
+        CornStalk cornStalkPlant = new CornStalk(false, false);
+        Crop newCrop = new Crop();
+
+        Froilan.plant(tomatoPlant, croprow2);
+        Froilan.plant(cornStalkPlant, croprow1);
+        Froilan.plant(newCrop, croprow3);
+
     }
+
 }
+

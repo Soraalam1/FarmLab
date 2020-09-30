@@ -15,7 +15,7 @@ public class Botanist extends Person{
 
     public void plant(Crop crop, CropRow croprow){
         croprow.getListOfCrops().add(crop);
-        System.out.println("I planted " + crop);
+        System.out.println(name + " planted " + crop.getClass().getSimpleName() + " in " + croprow.getName());
     }
 
     @Override
