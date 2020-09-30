@@ -314,7 +314,6 @@ public class Tuesday {
         froilandsBreakfast.add(froisCorn);
         froilandsBreakfast.add(froilandsTomato1);
         froilandsBreakfast.add(froilandsTomato2);
-        froilandsBreakfast.add(froilandsTomato3);
         froilandsBreakfast.add(froisEgg1);
         froilandsBreakfast.add(froisEgg2);
         froilandsBreakfast.add(froisEgg3);
