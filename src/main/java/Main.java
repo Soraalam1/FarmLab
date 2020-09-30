@@ -53,16 +53,9 @@ public class Main {
         farm.setOurFarmHouse(farmHouse);
 
 
-
         farm.getStables().add(stable1);
         farm.getStables().add(stable2);
         farm.getStables().add(stable3);
-
-
-
-
-
-
 
         //Set up Animals
 
@@ -195,30 +188,15 @@ public class Main {
 
         //Set up Vehicles
       //ASHER I ALSO MOVED YOUR TRACTOR TO THE PERSON SECTION :)
-      mcFroilanTractor.operate();
-      mcFroilanTractor.makeNoise();
 
       //ASHER I MOVED YOUR CROP DUSTER TO THE PERSON SECTION :)
+        System.out.println("\n" + "Testing Basic Vehicle Operation...");
+        mcFroilanTractor.operate();
+        mcFroilanTractor.makeNoise();
+
       froilandaCropDuster.fly();
+        froilandaCropDuster.makeNoise();
         froilandaCropDuster.operate();
-      froilandaCropDuster.makeNoise();
-
-      //froilandaCropDuster.fertilize();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         //Set up Produce
         System.out.println("\n"+ "Here are my crops!");

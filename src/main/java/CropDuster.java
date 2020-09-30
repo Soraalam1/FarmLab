@@ -20,7 +20,7 @@ public class CropDuster implements FarmVehicle, Aircraft {
     }
 
     public void operate(){
-        System.out.println(name + " is spraying Crops");
+        System.out.println(name + " is in operation.");
     }
 
 
