@@ -19,9 +19,7 @@ public class TomatoPlant extends Crop{
     public void setHasBeenHarvested(boolean hasBeenHarvested) {
         this.hasBeenHarvested = hasBeenHarvested;
     }
-    public String getProduceName(){
-        return "EarCorn";
-    }
+
     @Override
     public Tomato yield() {
         if (hasBeenFertilized) {
