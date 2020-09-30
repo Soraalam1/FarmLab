@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class FarmHouse {
     ArrayList<Person> people = new ArrayList<Person>();
-    ArrayList<Edible> foodSupply = new ArrayList<Edible>();
+    ArrayList<IEdible> foodSupply = new ArrayList<IEdible>();
 
     public FarmHouse(ArrayList<Person> people) {
         this.people = people;
@@ -20,7 +20,7 @@ public class FarmHouse {
         this.people = people;
     }
 
-    public void addFood(Edible edible){
+    public void addFood(IEdible edible){
 
         foodSupply.add(edible);
 

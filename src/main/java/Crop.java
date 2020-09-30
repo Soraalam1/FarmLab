@@ -1,15 +1,21 @@
 import java.util.ArrayList;
 
-public class Crop implements Produce {
+public class Crop implements IProduce {
    private boolean hasBeenHarvested = false;
-   private boolean hasBeenFertilized = false;
+   private boolean hasBeenFertilized = true;
 
 
-   public Edible yield() {
+   public IEdible yield() {
         if(hasBeenFertilized){
-            System.out.println("A crop has been yielded");
+            this.hasBeenHarvested = true;
+            System.out.println("Crop harvested!");
+            return null;
         }
     return null;
+    }
+
+    public boolean isHasBeenFertilized() {
+        return hasBeenFertilized;
     }
 
     public void fertilize(){
@@ -20,7 +26,7 @@ public class Crop implements Produce {
         this.hasBeenHarvested = true;
     }
 
-    public boolean isHasBeenFertilized() {
-        return hasBeenFertilized;
+    public String getProduceName() {
+        return "Generic Crop";
     }
 }

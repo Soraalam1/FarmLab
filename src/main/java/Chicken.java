@@ -1,5 +1,5 @@
 
-public class Chicken implements Animal, Produce {
+public class Chicken implements IAnimal, IProduce {
 
     private String name;
     private boolean hasBeenFertilized;
@@ -22,7 +22,7 @@ public class Chicken implements Animal, Produce {
         System.out.println("cluck cluck");
     }
 
-    public void eat(Edible object) {
+    public void eat(IEdible object) {
         System.out.println(object + "om nom nom");
     }
 

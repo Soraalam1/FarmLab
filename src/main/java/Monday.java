@@ -1,8 +1,7 @@
 import java.util.ArrayList;
 
 
-
-public class Main {
+public class Monday {
     public static void main(String[] args) {
         //Follow the instructions in the lab. We need a certain number of certain things.
         System.out.println("Ol' McFroilan Had a Farm...");
@@ -15,17 +14,12 @@ public class Main {
 
 
         Froilan.makeNoise();
-        Froilan.mount(mcFroilanTractor);
-        Froilan.dismount(mcFroilanTractor);
+
 
         //SISTER FROILANDA
         CropDuster froilandaCropDuster = new CropDuster("Pink Crop Duster");
         Pilot Froilanda = new Pilot("Froilanda", froilandaCropDuster);
-
-
         Froilanda.makeNoise();
-        Froilanda.mount(froilandaCropDuster);
-        Froilanda.dismount(froilandaCropDuster);
 
 
         //Set up Buildings and Fields (Farm)
@@ -280,8 +274,30 @@ public class Main {
         croprow5.setName("Beans");
         System.out.println(croprow5);
 
-        System.out.println("\n" + "**************It's Sunday!**************" + "\n");
-        
+        System.out.println("\n" + "**************It's Monday!**************" + "\n");
+
+        System.out.println("Before breakfast...");
+        System.out.println();
+        for (Stable stable: farm.getStables()) {
+            for(Horse currentHorse : stable.getHorses()){
+                Froilan.mount(currentHorse);
+                Froilan.ride(currentHorse);
+                Froilan.dismount(currentHorse);
+            }
+        }
+        System.out.println();
+        System.out.println("Froilanda is feeding each horse 3 earcorns!");
+        System.out.println();
+
+        for (Stable stable: farm.getStables()) {
+            for(Horse currentHorse : stable.getHorses()){
+                currentHorse.eat(new EarCorn("buttery corn"));
+                currentHorse.eat(new EarCorn("nasty corn"));
+                currentHorse.eat((new EarCorn("big corn")));
+            }
+        }
+        System.out.println();
+
 
         System.out.println("It's breakfast time...");
 
@@ -295,7 +311,7 @@ public class Main {
         EdibleEgg froisEgg4 = new EdibleEgg();
         EdibleEgg froisEgg5 = new EdibleEgg();
 
-        ArrayList<Edible> froilandsBreakfast = new ArrayList<Edible>();
+        ArrayList<IEdible> froilandsBreakfast = new ArrayList<IEdible>();
         froilandsBreakfast.add(froisCorn);
         froilandsBreakfast.add(froilandsTomato1);
         froilandsBreakfast.add(froilandsTomato2);
@@ -306,7 +322,7 @@ public class Main {
         froilandsBreakfast.add(froisEgg4);
         froilandsBreakfast.add(froisEgg5);
 
-        for (Edible currentFood : froilandsBreakfast) {
+        for (IEdible currentFood : froilandsBreakfast) {
             Froilan.eat(currentFood);
         }
         System.out.println();
@@ -316,27 +332,25 @@ public class Main {
         EdibleEgg froilandasEgg1 = new EdibleEgg();
         EdibleEgg froilandasEgg2 = new EdibleEgg();
 
-        ArrayList<Edible> froilandasBreakfast = new ArrayList<Edible>();
+        ArrayList<IEdible> froilandasBreakfast = new ArrayList<IEdible>();
         froilandasBreakfast.add(corn);
         froilandasBreakfast.add(corn2);
         froilandasBreakfast.add(froilandasTomato);
         froilandasBreakfast.add(froilandasEgg1);
         froilandasBreakfast.add(froilandasEgg2);
 
-        for (Edible currentFood1 : froilandasBreakfast) {
+        for (IEdible currentFood1 : froilandasBreakfast) {
             Froilanda.eat(currentFood1);
         }
         System.out.println();
-        System.out.println("Every Sunday Froilan plants crops...");
-        TomatoPlant tomatoPlant = new TomatoPlant(false,false);
-        CornStalk cornStalkPlant = new CornStalk(false, false);
-        Crop newCrop = new Crop();
-
-        Froilan.plant(tomatoPlant, croprow2);
-        Froilan.plant(cornStalkPlant, croprow1);
-        Froilan.plant(newCrop, croprow3);
-
+        System.out.println("Every Monday Froilanda fertilizes crops...");
+        Froilanda.mount(froilandaCropDuster);
+        for (CropRow currentCropRow:farm.getField().getCropRows()) {
+            froilandaCropDuster.fertilize(currentCropRow);
+        }
+        Froilanda.dismount(froilandaCropDuster);
+        System.out.println();
+        System.out.println("Froilanda has fertilized all the crops! The day is over!");
     }
-
 }
 

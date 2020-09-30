@@ -7,6 +7,11 @@ public class TomatoPlant extends Crop{
         this.hasBeenFertilized = hasBeenFertilized;
     }
 
+    @Override
+    public boolean isHasBeenFertilized() {
+        return hasBeenFertilized;
+    }
+
     public boolean isHasBeenHarvested() {
         return hasBeenHarvested;
     }
@@ -14,10 +19,14 @@ public class TomatoPlant extends Crop{
     public void setHasBeenHarvested(boolean hasBeenHarvested) {
         this.hasBeenHarvested = hasBeenHarvested;
     }
-
+    public String getProduceName(){
+        return "EarCorn";
+    }
+    @Override
     public Tomato yield() {
         if (hasBeenFertilized) {
-            System.out.println("Tomato created");
+            System.out.println("Tomato harvested!");
+            setHasBeenHarvested(true);
             return new Tomato();
         } else {
     return null;

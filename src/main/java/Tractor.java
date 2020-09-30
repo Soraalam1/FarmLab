@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Tractor implements FarmVehicle {
+public class Tractor implements IFarmVehicle {
 
     String name;
 
@@ -25,13 +25,11 @@ public class Tractor implements FarmVehicle {
     }
 
     public void harvestCropRow (CropRow harvestedCropRow){
-        System.out.println("Harvesting crops");
+        System.out.println("Harvesting crops from " + harvestedCropRow.getName());
         ArrayList<Crop> list = harvestedCropRow.getListOfCrops();
         for (int index = 0; index < list.size(); index++ ){
-            list.get(index).harvest();
             if (list.get(index).isHasBeenFertilized()){
                 list.get(index).yield();
-                list.get(index).harvest();
             }
 
         }
