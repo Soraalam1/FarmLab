@@ -221,7 +221,99 @@ public class Main {
 
 
         //Set up Produce
-        
+        System.out.println("\n"+ "Here are my crops!");
+        CornStalk cornStalk1 = new CornStalk(true,false);
+        CornStalk cornStalk2 = new CornStalk(true,false);
+        CornStalk cornStalk3 = new CornStalk(true,false);
+        CornStalk cornStalk4 = new CornStalk(true,false);
+        CornStalk cornStalk5 = new CornStalk(true,false);
+        CornStalk cornStalk6 = new CornStalk(false,false);
+        CornStalk cornStalk7 = new CornStalk(false,false);
+        CornStalk cornStalk8 = new CornStalk(false,false);
+        CornStalk cornStalk9 = new CornStalk(false, false);
+        CornStalk cornStalk10 = new CornStalk(false,false);
+        CornStalk cornStalk11 = new CornStalk(false,false);
+        CornStalk cornStalk12 = new CornStalk(false,false);
+        CornStalk cornStalk13 = new CornStalk(false,false);
+        CornStalk cornStalk14 = new CornStalk(false,false);
+        CornStalk cornStalk15 = new CornStalk(false,false);
+        croprow1.getListOfCrops().add(cornStalk1);
+        croprow1.getListOfCrops().add(cornStalk2);
+        croprow1.getListOfCrops().add(cornStalk3);
+        croprow1.getListOfCrops().add(cornStalk4);
+        croprow1.getListOfCrops().add(cornStalk5);
+        croprow1.getListOfCrops().add(cornStalk6);
+        croprow1.getListOfCrops().add(cornStalk7);
+        croprow1.getListOfCrops().add(cornStalk8);
+        croprow1.getListOfCrops().add(cornStalk9);
+        croprow1.getListOfCrops().add(cornStalk10);
+        croprow1.getListOfCrops().add(cornStalk11);
+        croprow1.getListOfCrops().add(cornStalk12);
+        croprow1.getListOfCrops().add(cornStalk13);
+        croprow1.getListOfCrops().add(cornStalk14);
+        croprow1.getListOfCrops().add(cornStalk15);
+        croprow1.setName("Corn Row");
+        System.out.println(croprow1);
+
+        TomatoPlant tomato1 = new TomatoPlant(false,false);
+        TomatoPlant tomato2 = new TomatoPlant(false,false);
+        TomatoPlant tomato3 = new TomatoPlant(false,false);
+        TomatoPlant tomato4 = new TomatoPlant(false,false);
+        TomatoPlant tomato5 = new TomatoPlant(false,false);
+        TomatoPlant tomato6 = new TomatoPlant(false,false);
+        TomatoPlant tomato7 = new TomatoPlant(false,false);
+        TomatoPlant tomato8 = new TomatoPlant(false,false);
+        TomatoPlant tomato9 = new TomatoPlant(false,false);
+        TomatoPlant tomato10 = new TomatoPlant(false,false);
+        TomatoPlant tomato11 = new TomatoPlant(false,false);
+        TomatoPlant tomato12 = new TomatoPlant(false,false);
+        croprow2.getListOfCrops().add(tomato1);
+        croprow2.getListOfCrops().add(tomato2);
+        croprow2.getListOfCrops().add(tomato3);
+        croprow2.getListOfCrops().add(tomato4);
+        croprow2.getListOfCrops().add(tomato5);
+        croprow2.getListOfCrops().add(tomato6);
+        croprow2.getListOfCrops().add(tomato7);
+        croprow2.getListOfCrops().add(tomato8);
+        croprow2.getListOfCrops().add(tomato9);
+        croprow2.getListOfCrops().add(tomato10);
+        croprow2.getListOfCrops().add(tomato11);
+        croprow2.getListOfCrops().add(tomato12);
+        croprow2.setName("Red Boys");
+        System.out.println(croprow2);
+
+        Crop crop1 = new Crop();
+        Crop crop2 = new Crop();
+        Crop crop3 = new Crop();
+        Crop crop4 = new Crop();
+        Crop crop5 = new Crop();
+        croprow3.getListOfCrops().add(crop1);
+        croprow3.getListOfCrops().add(crop2);
+        croprow3.getListOfCrops().add(crop3);
+        croprow3.getListOfCrops().add(crop4);
+        croprow3.getListOfCrops().add(crop5);
+        croprow3.setName("Leafy Greens");
+        System.out.println(croprow3);
+
+        croprow4.getListOfCrops().add(crop1);
+        croprow4.getListOfCrops().add(crop2);
+        croprow4.getListOfCrops().add(crop3);
+        croprow4.getListOfCrops().add(crop4);
+        croprow4.getListOfCrops().add(crop5);
+        croprow4.setName("Squash");
+        System.out.println(croprow4);
+
+        croprow5.getListOfCrops().add(crop1);
+        croprow5.getListOfCrops().add(crop2);
+        croprow5.getListOfCrops().add(crop3);
+        croprow5.getListOfCrops().add(crop4);
+        croprow5.getListOfCrops().add(crop5);
+        croprow5.setName("Beans");
+        System.out.println(croprow5);
+
+
+
+
 
 
 

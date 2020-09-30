@@ -25,6 +25,14 @@ public class CornStalk extends Crop {
     }
 
     @Override
+    public String toString() {
+        return "CornStalk{" +
+                "hasBeenFertilized=" + hasBeenFertilized +
+                ", hasBeenHarvested=" + hasBeenHarvested +
+                '}';
+    }
+
+    @Override
     public EarCorn yield() {
         if (hasBeenFertilized) {
             System.out.println("EarCorn implemented");
